@@ -1,15 +1,7 @@
-import { getSession } from '@/app/supabase-server';
-import AuthUI from './AuthUI';
 
-import { redirect } from 'next/navigation';
 import Logo from '@/components/icons/Logo';
 
 export default async function SignIn() {
-  const session = await getSession();
-
-  if (session) {
-    return redirect('/account');
-  }
 
   return (
     <div className="flex justify-center height-screen-helper">
@@ -17,7 +9,6 @@ export default async function SignIn() {
         <div className="flex justify-center pb-12 ">
           <Logo width="64px" height="64px" />
         </div>
-        <AuthUI />
       </div>
     </div>
   );

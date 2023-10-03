@@ -1,6 +1,6 @@
 'use client';
 
-import cn from 'classnames';
+// import cn from 'classnames';
 import React, { forwardRef, useRef, ButtonHTMLAttributes } from 'react';
 import { mergeRefs } from 'react-merge-refs';
 
@@ -30,21 +30,21 @@ const Button = forwardRef<HTMLButtonElement, Props>((props, buttonRef) => {
     ...rest
   } = props;
   const ref = useRef(null);
-  const rootClassName = cn(
-    styles.root,
-    {
-      [styles.slim]: variant === 'slim',
-      [styles.loading]: loading,
-      [styles.disabled]: disabled
-    },
-    className
-  );
+  // const rootClassName = cn(
+  //   styles.root,
+  //   {
+  //     [styles.slim]: variant === 'slim',
+  //     [styles.loading]: loading,
+  //     [styles.disabled]: disabled
+  //   },
+  //   className
+  // );
   return (
     <Component
       aria-pressed={active}
       data-variant={variant}
       ref={mergeRefs([ref, buttonRef])}
-      className={rootClassName}
+      // className={rootClassName}
       disabled={disabled}
       style={{
         width,
