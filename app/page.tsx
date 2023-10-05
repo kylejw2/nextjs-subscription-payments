@@ -1,18 +1,7 @@
-import Pricing from '@/components/Pricing';
+import CustomerPortal from '@/components/customer-portal';
 
-export default async function PricingPage() {
-  // const [session, products, subscription] = await Promise.all([
-  //   getSession(),
-  //   getActiveProductsWithPrices(),
-  //   getSubscription()
-  // ]);
-
+export default async function CustomerPortalPage() {
   return (
-    <Pricing
-      // session={session}
-      // user={session?.user}
-      // products={products}
-      // subscription={subscription}
-    />
+    <CustomerPortal/>
   );
 }
