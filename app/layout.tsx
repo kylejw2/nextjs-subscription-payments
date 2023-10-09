@@ -9,7 +9,7 @@ export default function RootLayout({
 }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body className="bg-black loading 100vh flex pt-8">
+      <body className="bg-white loading 100vh flex">
           {/* @ts-expect-error */}
           <Navbar />
           <main

@@ -52,8 +52,8 @@ export default function CustomerPortal() {
   }, [])
 
   return (
-    <section className="bg-black h-[95vh]">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 h-full">
+    <section className="bg-white h-screen">
+      <div className="h-full">
         {
           loading ? (
             <div className='border flex flex-col items-center justify-center w-full h-full'>
@@ -64,7 +64,7 @@ export default function CustomerPortal() {
         }
 
         {iframeUrl && !loading ? (
-          <iframe className='border w-full h-full bg-white' src={iframeUrl}/>
+          <iframe className='w-full h-full bg-white' src={iframeUrl}/>
         ) : null
         }
 

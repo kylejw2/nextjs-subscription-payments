@@ -1,13 +1,13 @@
 .root {
-  @apply sticky top-0 bg-black z-40 transition-all duration-150;
+  @apply sticky top-0 z-40 transition-all duration-150;
 }
 
 .link {
-  @apply inline-flex items-center leading-6 font-medium transition ease-in-out duration-75 cursor-pointer text-zinc-200 rounded-md p-1;
+  @apply inline-flex items-center leading-6 font-medium transition ease-in-out duration-75 text-zinc-600 cursor-pointer rounded-md py-3 text-xl;
 }
 
 .link_active {
-  @apply inline-flex items-center leading-6 font-medium transition ease-in-out duration-75 cursor-pointer text-zinc-200 rounded-md p-1 font-extrabold;
+  @apply inline-flex items-center leading-6 font-medium transition ease-in-out duration-75 cursor-pointer text-zinc-600 rounded-md py-3 text-xl font-extrabold;
 }
 
 .link:hover {
